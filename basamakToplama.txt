@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class basTotal {
+    public static void main(String[] args) {
+        int a;
+        int result = 0;
+        int temp;
+        int b = 0;
+        int c;
+
+        Scanner bjk = new Scanner(System.in);
+        System.out.println("Bir sayi girin :");
+
+        a = bjk.nextInt();
+        temp = a;
+        while (temp != 0) {
+            temp /= 10;
+            b++;
+
+        }
+        //System.out.println(b);
+        temp = a;
+        while (temp != 0) {
+
+            c = temp % 10;
+            //System.out.println(c);
+            temp /= 10;
+            result += c;
+        } System.out.println("basamak toplami = " + result);
+    }
+}
